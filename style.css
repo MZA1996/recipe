@@ -1,0 +1,45 @@
+#tabs {
+    text-align: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: honeydew;
+    color: blue;
+}
+
+h3 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+p{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+
+li{
+    text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+
+.col-sm{
+    background-color: rgb(184, 197, 184);
+}
+
+table {
+    border: 5px solid honeydew;
+    width: 100%;
+
+}
+
+h1 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+a {
+    text-align: center;
+}

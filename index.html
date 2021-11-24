@@ -6,11 +6,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <style>
+            @media only screen and (max-width: 640px){
+                body{
+                    width: 33.33%;
+                    height: 50%;
+                }
+            }
+        </style>
     </head>
     <body>
 
         <div class="container">
-            <ul class="nav nav-tabs" role="tablist">
+            <ul id="tabs" class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="tab" href="#home">Favourite Food</a>
                 </li>
@@ -21,7 +30,7 @@
                     <a class="nav-link" data-toggle="tab" href="#purchase">Places you can eat</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="alternatives.html" target="_blank">Alternative Food</a>
+                    <a class="nav-link" href="alternatives.html">Alternative Food</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -29,6 +38,8 @@
             </ul>
 
             <!-- TAB PANES -->
+
+            <!-- Favourite Food tab-->
 
             <div class="tab-content">
                 <div id="home" class="container tab-pane active">
@@ -57,12 +68,86 @@
                     </div>
                 </div>
 
+                <!-- Recipe tab -->
                 <div id="recipe" class="container tab-pane fade">
-                    <h3>Recipe</h3>
+                    <div class="row">
+                        <div class="col-sm">
+                        <h3>Recipe Information</h3>
+                        <ul>
+                            <li>Prep: 20 mins</li>
+                            <li>Cook: 55 mins</li>
+                            <li>Additional: 5 mins</li>
+                            <li>Total Time: 1 hr 20 mins</li>
+                            <li>Servings: 8</li>
+                        </ul>
+                        </div>
+                        <div class="col-sm">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>2 tablespoons extra-virgin olive oil</li>
+                            <li>1 large onion (chopped)</li>
+                            <li>2 tablespoons water (optional)</li>
+                            <li>2 pounds lean ground beef</li>
+                            <li>4 cloves of garlic (minced)</li>
+                            <li>2 tablespoons fresh ginger root (grated)</li>
+                            <li>1 serrano chilli pepper (finely chopped)</li>
+                            <li>2 teaspoons fresh cilantro (chopped)</li>
+                            <li>1 tablespoon ground coriander</li>
+                            <li>1.5 teaspoons salt</li>
+                            <li>1 teaspoon ground cayenne pepper</li>
+                            <li>1 teaspoon ground turmeric</li>
+                            <li>1 can diced tomatoes (28 ounce)</li>
+                            <li>3 potatoes (peeled and diced)</li>
+                            <li>1 cup frozen green peas</li>
+                            <li>1 teaspoon garam masala</li>
+                        </ul>
+                        </div>
+                        <div class="col-sm">
+                        <h3>Directions:</h3>
+                        <ol>
+                            <li>Step 1: Heat olive oil in a large saucepan over medium-high heat. Cook and stir onion in the hot oil until soft and beginning to brown, about 12 minutes. If browned bits of onion are stuck to the bottom of the pan, stir water into onion and stir to loosen the browned bits.
+                            </li>
+                            <li>Step 2: Mix ground beef, garlic, ginger, serrano chile, and cilantro into pan; cook and stir until beef is browned and crumbly, 10 to 15 minutes. Reduce heat to medium-low. Stir coriander, salt, cumin, cayenne pepper, and turmeric into the beef; cook and stir until flavors blend, about 5 minutes. Add tomatoes and potatoes, cover pot, and simmer until potatoes are tender, about 15 minutes.
+                            </li>
+                            <li>Step 3: Mix green peas into dish and cook until sauce has slightly thickened and flavors have blended, 10 to 15 minutes. Sprinkle garam masala over the dish, cover, and let stand for 5 minutes before serving.</li>
+                        </ol>
+
+                        <div class="content"></div>
+                            <button type="button" class="collapsible">I've done it!</button>
+                            <p>Congratulations! You are now a chef.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="purchase" class="container tab-pane fade">
-                    <h3>Places you can eat</h3>
+                    <h3>Places where you can eat Aloo Keema</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Rating</th>
+                        </tr>
+                        <tr>
+                            <th>Spicy Food Plus</th>
+                            <th>83 Wilton Road</th>
+                            <th>4.6 Stars</th>
+                        </tr>
+                        <tr>
+                            <th>Millbank Spice</th>
+                            <th>34-38 Vauxhall Bridge Road</th>
+                            <th>3.9 Stars</th>
+                        </tr>
+                        <tr>
+                            <th>Paradise Indian Restaurant</th>
+                            <th>5 Denbgh Street</th>
+                            <th>4 Stars</th>
+                        </tr>
+                        <tr>
+                            <th>Lovage Indian Restaurant</th>
+                            <th>74 Wilton Road</th>
+                            <th>4.5 Stars</th>
+                        </tr>
+                    </table>
                 </div>
 
             </div>
