@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Favourite Food</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Favourite Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#recipe">Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#purchase">Places you can eat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alternatives.html" target="_blank">Alternative Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                </li>
+            </ul>
+
+            <!-- TAB PANES -->
+
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active">
+                    <div class="row">
+                    <div class="col-sm">
+                    <h3>Aloo Keema</h3>
+                    <p>Aloo Keema is made up of two key ingredients:</p>
+                    <ul>
+                        <li>Aloo - Potatoes</li>
+                        <li>Keema - Minced beef or mutton</li>
+                    </ul>
+                    <p>It is a staple Pakistani meal and can usually be served with roti (chapatti) or rice.</p>
+                    </div>
+                    <div class="col-sm">
+                    <h3>Picture of Aloo Keema</h3>
+                    <img src="https://www.teaforturmeric.com/wp-content/uploads/2019/03/Aloo-Keema-4-480x270.jpg" alt="Aloo Keema">
+                    </div>
+                    <div class="col-sm">
+                    <h3>History of Aloo Keema</h3>
+                    <p>The name of the dish means minced meat in Urdu. Although keema is most popular in north India, Pakistan, and Bangladesh, some believe that the dish has Persian origins due to the fact that it was first mentioned as a recipe in Ain-I-Akbari (a document about emperor Akbar's empire).</p>
+                    </div>
+                    </div>
+                    <button type="button" class="collapsible">Read More</button>
+                    <div class="content">
+                        <p>Aloo Keema is fantastic.</p>
+                    </div>
+                </div>
+
+                <div id="recipe" class="container tab-pane fade">
+                    <h3>Recipe</h3>
+                </div>
+
+                <div id="purchase" class="container tab-pane fade">
+                    <h3>Places you can eat</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </body>
+</html>
